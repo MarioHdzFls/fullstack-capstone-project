@@ -1,36 +1,76 @@
-/* Style for image placeholder */
 .image-placeholder-large {
-    /* Task 1 styling */
-    {{insert code here}}
+    width: 100%;
+    padding-bottom: 75%;
+    position: relative;
+    overflow: hidden;
+    background-color: #e9ecef;
+    border-radius: 6px;
 }
 
-/* Style for product image */
 .product-image-large {
-    /* Task 2 styling */
-    {{insert code here}}
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    /* Eliminadas las propiedades max-width y max-height redundantes */
+    transition: transform 0.3s ease;
 }
 
-/* Style for 'no image available' placeholder */
 .no-image-available-large {
-    /* Task 3 styling */
-    {{insert code here}}
+    background-color: #f8f9fa;
+    color: #6c757d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    font-weight: 500; /* Se mantiene 500, asumiendo que se carga una fuente adecuada */
+    text-align: center;
+    border: 1px dashed #adb5bd;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
-/* Style for card header */
 .card-header {
-    /* Task 4 styling */
-    {{insert code here}}
+    background-color: #007bff;
+    color: white;
+    padding: 12px 15px;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-align: center;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Style for details title */
 .details-title {
-    /* Task 5 styling */
-    {{insert code here}}
+    font-size: 2em;
+    color: #343a40;
+    font-weight: 800;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    line-height: 1.2;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #ffc107;
 }
 
-/* Style for comments section */
 .comments-section {
-    /* Task 6 styling */
-    {{insert code here}}
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-top: 1px solid #dee2e6;
+    margin-top: 15px;
 }
 
+.comments-section .comment-item {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    line-height: 1.5;
+}
